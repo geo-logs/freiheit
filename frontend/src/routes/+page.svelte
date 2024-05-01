@@ -36,9 +36,6 @@
 
 <div class="frame text-center">
     <p><br /></p>
-    <h1>Geo Log</h1>
-
-    <p><br /></p>
     {#if visitorHasBrowserWallet}
         {#if !visitorIsConnectedViaBrowserWallet}
             <button on:click={() => clickConnect()}

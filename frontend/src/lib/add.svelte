@@ -10,6 +10,8 @@
     let refersTo = 0;
     let allowance = 0;
     let ready = false;
+    let tx: any;
+    let showPleaseReload = false;
 
     onMount(async () => {
         allowance = await geldContract.allowance(
@@ -22,51 +24,59 @@
         alert(
             `approving ${Geld} to spend ${priority} Geld from ${publicWalletAddressOfVisitor}`,
         );
-        const tx = await geldContract.approve(
-            Geld,
-            BigInt(priority * 10 ** 18),
-        );
-        await tx.wait();
+        tx = await geldContract.approve(Geld, BigInt(priority * 10 ** 18));
+        showPleaseReload = true;
     }
     async function log() {
         alert(
             `logging ${logMessage} with a priority of ${priority} referring to ${refersTo}`,
         );
-        await geldContract.log(
+        tx = await geldContract.log(
             BigInt(priority * 10 ** 18),
             logMessage,
             refersTo,
-            false
+            false,
         );
+        showPleaseReload = true;
     }
 </script>
 
 <p><br /></p>
-<!-- svelte-ignore a11y-autofocus -->
-<input
-    bind:value={priority}
-    class="myInputField"
-    type="number"
-    placeholder="... enter a donation amount ..."
-    autofocus
-/>
-<p><br /></p>
-{#if allowance > 0}
+{#if showPleaseReload}
+    You can observe your transaction via <a
+        href="https://polygonscan/tx/{tx.hash}">https://polygonscan/tx/{tx.hash}</a
+    >
+    <p><br /></p>
+    Please reload after some seconds to see the result of your transaction.
+    <p><br /></p>
+    <button on:click={() => window.location.reload()}>Reload</button>
+{:else}
+    <!-- svelte-ignore a11y-autofocus -->
     <input
-        bind:value={logMessage}
+        bind:value={priority}
         class="myInputField"
-        type="text"
-        placeholder="... enter your log message ..."
+        type="number"
+        placeholder="... enter a donation amount ..."
+        autofocus
     />
-{/if}
-<p></p>
+    <p><br /></p>
+    {#if allowance > 0}
+        <input
+            bind:value={logMessage}
+            class="myInputField"
+            type="text"
+            placeholder="... enter your log message ..."
+        />
+    {/if}
+    <p></p>
 
-{#if priority > 0}
-    {#if allowance == 0}
-        <button on:click={() => approve()}>Approve {priority} Geld</button>
-        <p><br /></p>
-    {:else}
-        <button on:click={() => log()}>Log</button>
+    {#if priority > 0}
+        {#if allowance == 0}
+            <button on:click={() => approve()}>Approve {priority} Geld</button>
+            <p><br /></p>
+        {:else}
+            <button on:click={() => log()}>Log</button>
+        {/if}
     {/if}
 {/if}
 
