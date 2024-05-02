@@ -12,13 +12,14 @@
 
     let logMessages: any[] = [];
     let showAddLogEntry = false;
+    let showInfo = false;
 
     onMount(async () => {
         if (typeof window.ethereum === "undefined") {
             visitorHasBrowserWallet = false;
         } else {
             visitorHasBrowserWallet = true;
-            await clickConnect() // during test phase
+            await clickConnect(); // during test phase
         }
     });
 
@@ -48,6 +49,8 @@
     {/if}
 
     {#if visitorIsConnectedViaBrowserWallet}
+        <h2>Geo Cashing Log Book</h2>
+        <p><br></p>
         <Entries {geldContract}></Entries>
         <p><br /></p>
         {#if showAddLogEntry}
@@ -56,6 +59,58 @@
             <button on:click={() => (showAddLogEntry = !showAddLogEntry)}
                 >Add Log Entry</button
             >
+        {/if}
+        <p><br /></p>
+        <button on:click={() => (showInfo = !showInfo)}>Show Info</button>
+        {#if showInfo}
+            <div class="content">
+                <p><br /></p>
+                You can donate
+                <a
+                    href="https://polygonscan.com/token/0xb841a4f979f9510760ecf60512e038656e68f459"
+                    target="_blank">Geo Cash</a
+                >
+                to the authors of Log Book Entries by adding an entry yourself.
+                <p><br /></p>
+
+                You can explore details around
+                <a
+                    href="https://polygonscan.com/token/0xb841a4f979f9510760ecf60512e038656e68f459"
+                    target="_blank">Geo Cash</a
+                >
+                via
+                <a
+                    href="https://github.com/geo-logs/freiheit/blob/main/README.md"
+                    target="_blank">the code repository</a
+                >, via
+                <a
+                    href="https://www.geckoterminal.com/polygon_pos/pools/0x0296f6ea1f02083b99ae59200d00f5257473f17c"
+                    target="_blank">geckoterminal.com</a
+                >
+                and via
+                <a
+                    href="https://polygonscan.com/token/0xb841a4f979f9510760ecf60512e038656e68f459"
+                    target="_blank">polygonscan.com</a
+                >.
+
+                <p><br /></p>
+
+                You can buy and sell
+                <a
+                    href="https://polygonscan.com/token/0xb841a4f979f9510760ecf60512e038656e68f459"
+                    target="_blank">Geo Cash</a
+                >
+                via
+                <a href="https://app.uniswap.org/swap" target="_blank"
+                    >uniswap</a
+                >
+                utilizing the smart contract address of
+                <a
+                    href="https://polygonscan.com/token/0xb841a4f979f9510760ecf60512e038656e68f459"
+                    target="_blank">Geo Cash</a
+                >: 0xb841A4f979F9510760ecf60512e038656E68f459
+                <p><br /></p>
+            </div>
         {/if}
     {/if}
 </div>
