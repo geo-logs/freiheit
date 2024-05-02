@@ -17,7 +17,7 @@ Some specific incentive goals of our experiments are:
 Geo Cachers can support this by following three simple steps:  
 1. Generate, print and hide paperwallets via a [Paperwallet Generator](https://visitor-gateway-to-geo-caching.github.io/geo-caching-paperwallet-generator)    
 2. Send Matic and [Geo Cash](https://polygonscan.com/address/0xb841A4f979F9510760ecf60512e038656E68f459) to those paperwallets to ensure that people who find paperwallets can experiment on the blockchain easily   
-3. Encourage people to post log entries in the **[Log Book](https://geld-wandern.de)** which is already at the time of writing this successfully integrated in many pages like [Geo-Caching.org](https://Geo-Caching.org), [privacy-is-not-a-crime.de](https://privacy-is-not-a-crime.de) et al.
+3. Encourage people to post log entries in the **[Log Book](https://freedomlog.de)** which is already at the time of writing this successfully integrated in many pages like [Geo-Caching.org](https://Geo-Caching.org), [privacy-is-not-a-crime.de](https://privacy-is-not-a-crime.de) et al.
 
 #### Log Book Integration Into Your Freedom Page
 ```html
