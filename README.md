@@ -16,8 +16,13 @@ Some specific incentive goals of our experiments are:
 ### Broad Distribution / Decentralization   
 Geo Cachers can support this by following three simple steps:  
 1. Generate, print and hide paperwallets via a [Paperwallet Generator](https://visitor-gateway-to-geo-caching.github.io/geo-caching-paperwallet-generator)    
-2. Send matic to those paperwallets to ensure that people who find it can experiment on the blockchain easily   
-3. Encourage people to buy [Geo Cash](https://polygonscan.com/address/0xb841A4f979F9510760ecf60512e038656E68f459) so that they can post logs in the [Geo Log](https://geld-wandern.de)
+2. Send Matic and [Geo Cash](https://polygonscan.com/address/0xb841A4f979F9510760ecf60512e038656E68f459) to those paperwallets to ensure that people who find paperwallets can experiment on the blockchain easily   
+3. Encourage people to post log entries in the **[Log Book](https://geld-wandern.de)** which is already at the time of writing this successfully integrated in many pages like [Geo-Caching.org](https://Geo-Caching.org), [privacy-is-not-a-crime.de](https://privacy-is-not-a-crime.de) et al.
+
+#### Log Book Integration Into Your Freedom Page
+```html
+<embed src="https://geo-logs.github.io/freiheit" width="100%" height="810" />
+``` 
 
 ### Sustainable Liquidity Infrastructures      
 [We](https://github.com/moniquebaumann/friends-of-satoshi) made it difficult for centralized bad actors or matrix agents to exploit [Geo Cash](https://polygonscan.com/address/0xb841A4f979F9510760ecf60512e038656E68f459).   
@@ -29,13 +34,11 @@ We foster the peer to peer cash space in the pure, honorable and respectful spir
 We encourage people to experiment themselves with small amounts of cash.
 
 
-## Geo Log
-The [log book](https://geld-wandern.de) is utilized e.g. by [Geo-Caching.org](https://Geo-Caching.org).
+## Geo Cash On Blockchainexplorer
+See [polygonscan.com](https://polygonscan.com/token/0xb841a4f979f9510760ecf60512e038656e68f459) 
 
-### Integration Into Your Freedom Page
-```html
-<embed src="https://geo-logs.github.io/freiheit" width="100%" height="810" />
-``` 
+## Geo Cash In Geckoterminal
+See [geckoterminal.com](https://www.geckoterminal.com/polygon_pos/pools/0x0296f6ea1f02083b99ae59200d00f5257473f17c) 
 
 ## About Us 
 We are [Friends of Satoshi](https://github.com/moniquebaumann/friends-of-satoshi). 
