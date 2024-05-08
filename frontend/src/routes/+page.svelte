@@ -110,13 +110,19 @@
         {#if showContact}
             <p><br /><br /></p>
             Es handelt sich bei unserem Projekt nicht um ein gewerbliches Projekt
-            sondern um ein Bildungsprojekt ohne Gewinnerzielungsabsicht unsererseits.
-            Wir sind bereits frei. Aus diesem Grund verzichten wir auf ein<a
+            sondern um ein 
+            <a
+                href="https://github.com/geo-logs/freiheit/blob/main/README.md"
+                target="_blank">Open Source</a
+            >
+            Bildungsprojekt ohne Gewinnerzielungsabsicht unsererseits. Wir sind bereits
+            frei. Aus diesem Grund verzichten wir auf ein
+            <a
                 href="https://www.youtube.com/watch?v=I6jaruQuBhM"
                 target="_blank"
             >
-                klassisches Impressum
-            </a>.
+                klassisches Impressum</a
+            >.
             <p><br /></p>
 
             <b> Keine Abmahnung ohne Kontakt! </b>
@@ -129,6 +135,8 @@
             werden im Sinne der Schadensminderungspflicht zurückgewiesen und gegebenenfalls
             wird Gegenklage wegen Verletzung vorgenannter Bestimmungen eingereicht.
 
+            <p><br></p>
+            Unsere <a href="https://github.com/moniquebaumann/friends-of-satoshi" target="_blank">Familie</a> aus Open Source Programmierern für Freiheit, Friede und Gerechtigkeit bearbeiten gerne wertvolle Kontaktanfragen per <a href="https://github.com/geo-logs/freiheit/issues/new" target="_blank">GitHub</a>.
             <p><br /></p>
         {/if}
     {/if}
