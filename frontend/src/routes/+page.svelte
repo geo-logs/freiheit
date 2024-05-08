@@ -13,6 +13,7 @@
     let logMessages: any[] = [];
     let showAddLogEntry = false;
     let showInfo = false;
+    let showContact = false;
 
     onMount(async () => {
         if (typeof window.ethereum === "undefined") {
@@ -50,7 +51,7 @@
 
     {#if visitorIsConnectedViaBrowserWallet}
         <h2>Geo Cashing Log Book</h2>
-        <p><br></p>
+        <p><br /></p>
         <Entries {geldContract}></Entries>
         <p><br /></p>
         {#if showAddLogEntry}
@@ -61,7 +62,7 @@
             >
         {/if}
         <p><br /></p>
-        <button on:click={() => (showInfo = !showInfo)}>Show Info</button>
+        <button on:click={() => (showInfo = !showInfo)}>Features</button>
         {#if showInfo}
             <div class="content">
                 <p><br /></p>
@@ -70,49 +71,68 @@
                     href="https://polygonscan.com/token/0xb841a4f979f9510760ecf60512e038656e68f459"
                     target="_blank">Geo Cash</a
                 >
-                to the authors of Log Book Entries by adding an entry yourself.
+                to the authors of Log Book Entries while adding Geo Log Entries yourself.
+                The programmers and operators of this project are already free. So
+                if some of us receive donations, we'll donate them further.
                 <p><br /></p>
 
-                You can explore details around
-                <a
-                    href="https://polygonscan.com/token/0xb841a4f979f9510760ecf60512e038656e68f459"
-                    target="_blank">Geo Cash</a
+                You can explore details around our freedom currencies via
+                several entry points e.g.
+                <a href="https://FreedomCash.org" target="_blank"
+                    >FreedomCash.org</a
+                >,
+                <a href="https://Geo-Caching.org" target="_blank"
+                    >Geo-Caching.org</a
                 >
-                via
-                <a
-                    href="https://github.com/geo-logs/freiheit/blob/main/README.md"
-                    target="_blank">the code repository</a
-                >, via
-                <a
-                    href="https://www.geckoterminal.com/polygon_pos/pools/0x0296f6ea1f02083b99ae59200d00f5257473f17c"
-                    target="_blank">geckoterminal.com</a
-                >
-                and via
-                <a
-                    href="https://polygonscan.com/token/0xb841a4f979f9510760ecf60512e038656e68f459"
-                    target="_blank">polygonscan.com</a
+                <a href="https://Freiheitsgeld.de" target="_blank"
+                    >Freiheitsgeld.de</a
+                >,
+                <a href="https://privacy-is-not-a-crime.de" target="_blank"
+                    >privacy-is-not-a-crime.de</a
                 >.
 
                 <p><br /></p>
+                This is an educational
+                <a
+                    href="https://github.com/geo-logs/freiheit/blob/main/README.md"
+                    target="_blank">open source</a
+                >
+                project. Please contribute to free the world.
 
-                You can buy and sell
-                <a
-                    href="https://polygonscan.com/token/0xb841a4f979f9510760ecf60512e038656e68f459"
-                    target="_blank">Geo Cash</a
-                >
-                via
-                <a href="https://app.uniswap.org/swap" target="_blank"
-                    >uniswap</a
-                >
-                utilizing the smart contract address of
-                <a
-                    href="https://polygonscan.com/token/0xb841a4f979f9510760ecf60512e038656e68f459"
-                    target="_blank">Geo Cash</a
-                >: 0xb841A4f979F9510760ecf60512e038656E68f459
                 <p><br /></p>
             </div>
         {/if}
+
+        <p><br /></p>
+        <button on:click={() => (showContact = !showContact)}
+            >Contact / Imprint</button
+        >
+        {#if showContact}
+            <p><br /><br /></p>
+            Es handelt sich bei unserem Projekt nicht um ein gewerbliches Projekt
+            sondern um ein Bildungsprojekt ohne Gewinnerzielungsabsicht unsererseits.
+            Wir sind bereits frei. Aus diesem Grund verzichten wir auf ein<a
+                href="https://www.youtube.com/watch?v=I6jaruQuBhM"
+                target="_blank"
+            >
+                klassisches Impressum
+            </a>.
+            <p><br /></p>
+
+            <b> Keine Abmahnung ohne Kontakt! </b>
+            <p></p>
+            Sollte der Inhalt fremde Rechte Dritter oder gesetzliche Bestimmungen
+            verletzen, kontaktieren Sie uns ohne Kostennote. Wir garantieren, dass
+            zurecht beanstandete Inhalte unverzüglich entfernt werden, ohne dass
+            von Ihrer Seite die Einschaltung eines Rechtsbeistandes erforderlich
+            ist. Dennoch von Ihnen ohne vorherige Kontaktaufnahme ausgelöste Kosten
+            werden im Sinne der Schadensminderungspflicht zurückgewiesen und gegebenenfalls
+            wird Gegenklage wegen Verletzung vorgenannter Bestimmungen eingereicht.
+
+            <p><br /></p>
+        {/if}
     {/if}
+    <p><br /><br /><br /></p>
 </div>
 
 <style>
