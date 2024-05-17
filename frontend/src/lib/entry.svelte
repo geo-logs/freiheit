@@ -9,7 +9,7 @@
 <tr on:click={() => (showDetail = !showDetail)}>
     <td
         >{@html replaceContentToShowClickableLinks(logMessage.message)} (donated
-        {ethers.formatEther(logMessage.priority)} Geld)</td
+        {ethers.formatEther(logMessage.priority)} Geo Cash)</td
     >
     <!-- <td>{ethers.formatEther(logMessage.priority)}</td> -->
 </tr>

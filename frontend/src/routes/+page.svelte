@@ -50,7 +50,7 @@
     {/if}
 
     {#if visitorIsConnectedViaBrowserWallet}
-        <h2>Geo Cashing Log Book</h2>
+        <h2>Geo Caching Log Book</h2>
         <p><br /></p>
         <Entries {geldContract}></Entries>
         <p><br /></p>
@@ -124,7 +124,7 @@
             >
                 klassisches Impressum</a
             >.
-            <p><br /></p>
+            <p><br /><br><br></p>
 
             <b> Keine Abmahnung ohne Kontakt! </b>
             <p></p>
