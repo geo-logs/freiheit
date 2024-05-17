@@ -62,7 +62,6 @@
         width: 100%;
     }
 
-    td,
     th {
         border: 1px solid #dddddd;
         text-align: left;

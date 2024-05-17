@@ -73,7 +73,8 @@
                 >
                 to the authors of Log Book Entries while adding Geo Log Entries yourself.
                 The programmers and operators of this project are already free. So
-                if some of us receive donations, we'll donate them further.
+                if some of us receive donations, we'll donate them further. You can validate this e.g. via 
+                <a href="https://polygonscan.com/token/0xb841a4f979f9510760ecf60512e038656e68f459" target="_blank">polygonscan.com</a>.
                 <p><br /></p>
 
                 You can explore details around our freedom currencies via
@@ -128,12 +129,15 @@
             <b> Keine Abmahnung ohne Kontakt! </b>
             <p></p>
             Sollte der Inhalt fremde Rechte Dritter oder gesetzliche Bestimmungen
-            verletzen, kontaktieren Sie uns ohne Kostennote. Wir garantieren, dass
+            verletzen, kontaktieren Sie uns ohne Kostennote. Wir stellen nach bestem Wissen und Gewissen sicher, dass
             zurecht beanstandete Inhalte unverzüglich entfernt werden, ohne dass
             von Ihrer Seite die Einschaltung eines Rechtsbeistandes erforderlich
             ist. Dennoch von Ihnen ohne vorherige Kontaktaufnahme ausgelöste Kosten
             werden im Sinne der Schadensminderungspflicht zurückgewiesen und gegebenenfalls
-            wird Gegenklage wegen Verletzung vorgenannter Bestimmungen eingereicht.
+            wird Gegenklage wegen Verletzung vorgenannter Bestimmungen eingereicht. 
+            <p><br></p>
+            Sofern Sie ein Abmahnanwalt sind und bereit sind einer möglicherweise noch wertvolleren Berufung zu folgen, laden wir Sie ein kostenlos für uns zu prüfen inwieweit es rechtlich zulässig ist ein dezentrales, smart contract basiertes Content Moderationssystem für 
+            <a href="https://freedomlog.de" target="_blank">Freedomlog.de</a> einzuführen. <p></p> Prototypisch haben wir ein solches im Rahmen eines Smart Contracts namens <a href="https://github.com/moniquebaumann/freedom-tribunal/blob/main/freedom-tribunal.sol" target="_blank">FreedomTribunal</a> implementiert. 
 
             <p><br></p>
             Unsere <a href="https://github.com/moniquebaumann/friends-of-satoshi" target="_blank">Familie</a> aus Open Source Programmierern für Freiheit, Friede und Gerechtigkeit bearbeiten gerne wertvolle Kontaktanfragen per <a href="https://github.com/geo-logs/freiheit/issues/new" target="_blank">GitHub</a>.
