@@ -52,6 +52,8 @@
     {#if visitorIsConnectedViaBrowserWallet}
         <h2>Geo Caching Log Book</h2>
         <p><br /></p>
+        Please communicate with respect for all people. 
+        <p><br /></p>
         <Entries {geldContract}></Entries>
         <p><br /></p>
         {#if showAddLogEntry}
